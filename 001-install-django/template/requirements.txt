@@ -1,2 +1,0 @@
-# write django requirement here
-# django == ?
