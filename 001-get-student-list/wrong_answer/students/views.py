@@ -1,10 +1,10 @@
 from django.http import JsonResponse
 
-from student.models import StudentsModel
+from student.models import Student
 
 
 def get_student_list(request):
-    queryset = StudentsModel.object.all()
+    queryset = Student.object.all()
     data = queryset.values()
     res = {
         "data": list(data)

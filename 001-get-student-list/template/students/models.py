@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class StudentsModel(models.Model):
+class Student(models.Model):
     GENDER_CHOICE = [
         (1, "male"),
         (0, "female")

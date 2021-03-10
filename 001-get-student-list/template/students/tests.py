@@ -22,7 +22,7 @@ GIRL_NAMES = ["江布侬", "钟盼曼", "苏瑜敏", "侯曼云", "谢思云", "
               "黄娘", "董丽", "黄美", "江霓", "杜滢", "钟影", "潘惠", "文悦", "萧茹", "郝雯"]
 
 
-def format_list_data(model_name):
+def query_from_db(model_name):
     queryset = model_name.objects.all()
     data = queryset.values()
     res = {
@@ -43,5 +43,5 @@ class StudentTest(TestCase):
         response = self.client.get('/students/')
         self.assertEqual(response.status_code, 200)
 
-        res = format_list_data(StudentModel)
+        res = query_from_db(StudentModel)
         self.assertEqual(json.loads(response.content), res)
