@@ -1,0 +1,7 @@
+editable_files:
+  - students/views.py
+time_limit: 10s
+memory_limit: 256MB
+compare_type: raw_text
+need_install: false
+need_migration: false
