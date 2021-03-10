@@ -1,7 +1,7 @@
-from django.db.models import Model
+from django.db import models
 
 # Create your models here.
 
 
-class StudentsModel(Model):
+class StudentsModel(models.Model):
     raise "students model not implement"
